@@ -1,10 +1,11 @@
 export const metadata = {
   title: "Plato Design | Structural Research & Spatial Analysis",
-  description: "Redesigning environmental conditions for high-quality human activity.",
+  description: "Independent research institute focused on spatial operating conditions.",
+  alternates: { canonical: "https://plato-design-site.vercel.app/" }
 };
 
 export default function Home() {
-  /* v1.0.1 - Fresh Build */
+  // Production Release v1.0.0
   return (
     <div className="home-container">
       <section className="page-intro">
