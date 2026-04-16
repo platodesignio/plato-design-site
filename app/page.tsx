@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Plato Design | Institutional Environmental Conditions",
+  title: "Plato Design | Structural Research & Spatial Conditions",
 };
 
 export default function Home() {
