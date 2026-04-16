@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export', // Force static export to bypass Vercel routing issues
-  images: {
-    unoptimized: true,
-  },
+  trailingSlash: true, // パス解決を確実にするための設定
 };
 
 export default nextConfig;
