@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Plato Design | Institutional Environmental Conditions",
+};
+
 export default function Home() {
   return (
     <div className="home-container">
