@@ -1,8 +1,10 @@
 export const metadata = {
-  title: "Plato Design | Structural Research & Spatial Conditions",
+  title: "Plato Design | Structural Research & Spatial Analysis",
+  description: "Redesigning environmental conditions for high-quality human activity.",
 };
 
 export default function Home() {
+  /* v1.0.1 - Fresh Build */
   return (
     <div className="home-container">
       <section className="page-intro">

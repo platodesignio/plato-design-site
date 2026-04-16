@@ -1,5 +1,5 @@
 {
-  "name": "plato-design",
+  "name": "plato-design-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.2.9",
+    "next": "15.1.5",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
@@ -18,7 +18,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.2.9",
+    "eslint-config-next": "15.1.5",
     "typescript": "^5"
   }
 }
