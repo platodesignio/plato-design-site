@@ -14,8 +14,8 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Plato Design | Independent Research Institute",
-  description: "High-end design research and architectural inquiry.",
+  title: "Plato Design | Structural Research & Spatial Analysis",
+  description: "Independent research institute focused on the environmental conditions enabling high-quality human difference generation.",
 };
 
 export default function RootLayout({
@@ -32,16 +32,24 @@ export default function RootLayout({
           </div>
           <nav className="site-nav">
             <ul>
-              <li><Link href="/about">ABOUT</Link></li>
+              <li><Link href="/about">RESEARCH</Link></li>
               <li><Link href="/services">SERVICES</Link></li>
-              <li><Link href="/method">METHOD</Link></li>
-              <li><Link href="/case-direction">CASE DIRECTION</Link></li>
+              <li><Link href="/theory">THEORY</Link></li>
+              <li><Link href="/archive">ARCHIVE</Link></li>
+              <li><Link href="/activity">ACTIVITY</Link></li>
+              <li><a href="https://www.instagram.com/plato.design.lab" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
+              <li><a href="https://www.patreon.com/cw/platodesignlab" target="_blank" rel="noopener noreferrer">PATREON</a></li>
               <li><Link href="/contact">CONTACT</Link></li>
             </ul>
           </nav>
         </header>
         <main>{children}</main>
         <footer className="site-footer">
+          <div className="footer-links">
+            <a href="https://www.instagram.com/plato.design.lab" target="_blank" rel="noopener noreferrer">@plato.design.lab</a>
+            <span className="separator">/</span>
+            <a href="https://www.patreon.com/cw/platodesignlab" target="_blank" rel="noopener noreferrer">Plato Design Lab on Patreon</a>
+          </div>
           <p>© {new Date().getFullYear()} PLATO DESIGN RESEARCH INSTITUTE. ALL RIGHTS RESERVED.</p>
         </footer>
       </body>

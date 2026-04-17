@@ -110,9 +110,34 @@ strong {
   margin-top: auto;
   padding-top: 12rem;
   text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 2rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+}
+
+.footer-links a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 0.5;
+}
+
+.footer-links .separator {
+  margin: 0 1.5rem;
+  color: var(--secondary);
+}
+
+.site-footer p {
   font-size: 0.6rem;
   letter-spacing: 0.25em;
   color: var(--secondary);
+  margin: 0 auto;
 }
 
 /* Page Layouts */
@@ -150,20 +175,32 @@ main {
   .grid { gap: 3rem; }
 }
 
-/* Structured Sections (Services / Method) */
+/* Structured Sections */
 .structural-unit {
   margin-bottom: 8rem;
-  border-top: 1px solid var(--hairline); /* Quiet separation */
+  border-top: 1px solid var(--hairline); 
   padding-top: 3rem;
 }
 
 .structural-unit h2 {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
+  font-weight: 300;
 }
 
-/* Form Styles (Inquiry) */
+.structural-unit p {
+  margin-bottom: 1.5rem;
+}
+
+/* Specific Section Adjustments */
+.theory-container .structural-unit,
+.archive-container .structural-unit,
+.activity-container .structural-unit {
+  border-top-color: #f0f0f0;
+}
+
+.mt-large { margin-top: 6rem; }
 .contact-form {
   max-width: 500px;
 }
