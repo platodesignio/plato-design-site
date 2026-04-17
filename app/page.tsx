@@ -213,28 +213,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <style jsx>{`
-        .block-link {
-          display: block;
-          text-decoration: none;
-          color: inherit;
-          transition: opacity 0.3s;
-          padding: 1.5rem;
-          border: 1px solid transparent;
-        }
-        .block-link:hover {
-          opacity: 0.6;
-          border-color: #eee;
-        }
-        .action-layer {
-          margin-top: 6rem;
-          margin-bottom: 8rem;
-        }
-        .submit-btn {
-          text-decoration: none;
-        }
-      `}</style>
     </div>
   );
 }
