@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Ensure we have a trailing slash or not, depending on what we want
-  trailingSlash: false,
+  trailingSlash: true, // パス解決の不整合を解消
 };
 
 module.exports = nextConfig;
