@@ -19,14 +19,16 @@ html, body {
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-  line-height: 1.8; /* Increased for editorial breath */
+  line-height: 1.8;
+  width: 100%;
+  overflow-x: hidden; /* 防止横揺れ on mobile */
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding: 6rem 4rem; /* Generous margins */
+  padding: 6rem 5vw; /* Use vw for flexible margins */
 }
 
 @media (max-width: 768px) {
