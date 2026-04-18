@@ -19,8 +19,10 @@ export const metadata = {
 };
 
 export default function Home() {
+  // SECURE_PRODUCTION_BUILD: v6.0.0
   return (
     <div className="home-container">
+      <div style={{ position: 'fixed', bottom: '1rem', right: '1rem', fontSize: '0.5rem', color: '#ccc', zIndex: 1000, opacity: 0.1 }}>v6.0.0</div>
       {/* 1. HERO SECTION */}
       <section className="page-intro center">
         <span className="mono">0.0 / Practice Definition</span>
