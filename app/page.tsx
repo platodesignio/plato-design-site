@@ -21,7 +21,7 @@ export const metadata = {
 };
 
 export default function Home() {
-  // Build: 20260416-Rev2-Static
+  // Edge-Cache-Flush-ID: 20260416-Final-Reset
   return (
     <div className="home-container">
       {/* 1. HERO SECTION */}
