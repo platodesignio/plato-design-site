@@ -36,13 +36,16 @@ export default function Contact() {
             </p>
           </div>
           <div className="mt-large">
-            <span className="mono">Verification</span>
-            {EXTERNAL_LINKS.map((link, index) => (
-              <div key={index} style={{ marginBottom: '1rem' }}>
-                <a href={link.href} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.9rem', textDecoration: 'underline' }}>{link.label}</a>
-                <p style={{ fontSize: '0.75rem', color: '#666' }}>{link.description}</p>
-              </div>
-            ))}
+            <span className="mono">Verification Registry</span>
+            <div style={{ marginTop: '1.5rem' }}>
+              {EXTERNAL_LINKS.map((link, index) => (
+                <div key={index} style={{ marginBottom: '1rem', borderBottom: '1px solid #f9f9f9', paddingBottom: '0.5rem' }}>
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" className="verification-link" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }}>
+                    <span className="mono" style={{ fontSize: '0.7rem', color: '#1a1a1a' }}>{link.label}</span>
+                  </a>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="col-6">

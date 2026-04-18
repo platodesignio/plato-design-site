@@ -188,23 +188,23 @@ export const FOUNDER = {
 
 export const EXTERNAL_LINKS = [
   {
-    label: "@platodesignlab on X",
+    label: "X / @platodesignlab",
     href: "https://x.com/platodesignlab",
-    description: "Brief updates and theoretical fragments."
+    description: "Theoretical fragments and operational updates."
   },
   {
-    label: "Plato Design Lab on YouTube",
+    label: "YouTube / Plato Design Lab",
     href: "https://youtube.com/@platodesignlab?si=CnewIXXMBk9ITPF2",
-    description: "Visual studies and environmental walkthroughs."
+    description: "Visual research and environmental walkthroughs."
   },
   {
-    label: "@plato.design.lab on Instagram",
+    label: "Instagram / @plato.design.lab",
     href: "https://www.instagram.com/plato.design.lab",
-    description: "Ongoing visual research and public fragments."
+    description: "Field observations and visual theory fragments."
   },
   {
-    label: "Plato Design Lab on Patreon",
+    label: "Patreon / Plato Design Lab",
     href: "https://www.patreon.com/cw/platodesignlab",
-    description: "Research releases, theory plates, and deeper archive access."
+    description: "Research releases and deep archive access."
   }
 ];

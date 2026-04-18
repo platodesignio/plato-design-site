@@ -197,14 +197,14 @@ export default function Home() {
 
       {/* 9. EXTERNAL LINKS */}
       <section className="structural-unit">
-        <span className="mono">0.8 / External verification</span>
-        <h2>Connected Research.</h2>
+        <span className="mono">0.8 / Verification Registry</span>
+        <h2>Connected Research Channels.</h2>
         <div className="grid">
           {EXTERNAL_LINKS.map((link, index) => (
-            <div key={index} className="col-6">
-              <a href={link.href} target="_blank" rel="noopener noreferrer" className="block-link">
-                <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>{link.label}</h3>
-                <p style={{ fontSize: '0.9rem' }}>{link.description}</p>
+            <div key={index} className="col-12" style={{ borderBottom: '1px solid #f0f0f0', padding: '1rem 0' }}>
+              <a href={link.href} target="_blank" rel="noopener noreferrer" className="verification-link" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', textDecoration: 'none', color: 'inherit' }}>
+                <span className="mono" style={{ fontSize: '0.8rem', color: '#1a1a1a' }}>{link.label}</span>
+                <p style={{ fontSize: '0.8rem', color: '#888', margin: 0 }}>{link.description}</p>
               </a>
             </div>
           ))}

@@ -323,3 +323,11 @@ main {
 .submit-btn {
   text-decoration: none;
 }
+
+.verification-link {
+  transition: opacity 0.3s ease;
+}
+
+.verification-link:hover {
+  opacity: 0.5;
+}
