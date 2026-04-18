@@ -2,14 +2,12 @@ import Link from "next/link";
 import { 
   HERO_CONTENT, 
   NAVIGATION_PATHS, 
-  DIAGNOSTIC_AXES, 
-  THEORY_CONCEPTS, 
-  SERVICES, 
-  ARCHIVE, 
-  ACTIVITY, 
-  AUTHORITY, 
-  FOUNDER, 
-  EXTERNAL_LINKS 
+  INTRO_CONTENT,
+  RESEARCH_DOMAINS,
+  GRAVITY_PREVIEW,
+  SERVICES,
+  AUTHORITY_TEXT,
+  EXTERNAL_LINKS
 } from "@/lib/content";
 
 export const metadata = {
@@ -21,10 +19,8 @@ export const metadata = {
 };
 
 export default function Home() {
-  // PRODUCTION_SYNC_ID: v4.0.0
   return (
     <div className="home-container">
-      <div style={{ position: 'fixed', bottom: '1rem', right: '1rem', fontSize: '0.5rem', color: '#ccc', zIndex: 1000, opacity: 0.2 }}>v4.0.0</div>
       {/* 1. HERO SECTION */}
       <section className="page-intro center">
         <span className="mono">0.0 / Practice Definition</span>
@@ -56,149 +52,83 @@ export default function Home() {
         </nav>
       </section>
 
-      {/* 2. ABOUT / RESEARCH FRAMEWORK */}
+      {/* 2. INTRO SECTION */}
       <section className="structural-unit">
-        <span className="mono">0.1 / Foundation</span>
-        <h2>The Conditions of Difference.</h2>
+        <span className="mono">0.1 / Introduction</span>
         <div className="grid">
           <div className="col-8">
-            <p>
-              Plato Design studies and redesigns the conditions that shape human attention, 
-              judgment, recovery, action, and generative capacity through the configuration 
-              of space, environment, and support structure.
+            <p style={{ fontSize: '1.25rem', lineHeight: '1.6' }}>
+              {INTRO_CONTENT.text}
             </p>
-            <p>
-              The practice reads environments through ten common diagnostic axes used to 
-              understand why a room, workspace, or facility supports or degrades human performance.
-            </p>
-          </div>
-        </div>
-        <div className="grid mt-large">
-          {DIAGNOSTIC_AXES.slice(0, 4).map((axis) => (
-            <div key={axis.id} className="col-3">
-              <span className="mono">{axis.id}</span>
-              <h3 style={{ fontSize: '0.9rem', marginBottom: '1rem' }}>{axis.title}</h3>
-              <p style={{ fontSize: '0.8rem', color: '#666' }}>{axis.definition}</p>
-            </div>
-          ))}
-          <div className="col-12" style={{ marginTop: '2rem' }}>
-            <Link href="/about" className="mono" style={{ textDecoration: 'underline' }}>
-              View all 10 diagnostic axes
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* 3. THEORY SECTION */}
+      {/* 3. RESEARCH SIGNAL */}
       <section className="structural-unit">
-        <span className="mono">0.2 / Conceptual Logic</span>
-        <h2>Usable Frameworks.</h2>
+        <span className="mono">0.2 / Research Domains</span>
         <div className="grid">
-          {THEORY_CONCEPTS.slice(0, 3).map((concept, index) => (
-            <div key={index} className="col-4">
-              <h3 style={{ fontSize: '1rem', marginBottom: '1.5rem' }}>{concept.title}</h3>
-              <p style={{ fontSize: '0.9rem' }}>{concept.definition}</p>
-              <p style={{ fontSize: '0.8rem', color: '#666' }}><em>Utility:</em> {concept.utility}</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-large">
-          <Link href="/theory" className="mono" style={{ textDecoration: 'underline' }}>
-            Explore full theory architecture
-          </Link>
+          <div className="col-8">
+            <ul style={{ listStyle: 'none', padding: 0 }}>
+              {RESEARCH_DOMAINS.map((domain, index) => (
+                <li key={index} style={{ marginBottom: '1rem', fontSize: '1.5rem', fontFamily: 'var(--font-serif)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                  {domain}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
-      {/* 4. SERVICES SECTION */}
+      {/* 4. GRAVITY TRANSITION PREVIEW */}
       <section className="structural-unit">
-        <span className="mono">0.3 / Offer Architecture</span>
-        <h2>Structural Redesign Services.</h2>
+        <span className="mono">0.3 / Specialized Field</span>
+        <h2>{GRAVITY_PREVIEW.title}</h2>
+        <div className="grid">
+          <div className="col-8">
+            <p>{GRAVITY_PREVIEW.text}</p>
+            <div className="mt-large">
+              <Link href="/gravity" className="mono" style={{ textDecoration: 'underline' }}>
+                View Gravity Transition Studies
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. SERVICES PREVIEW */}
+      <section className="structural-unit">
+        <span className="mono">0.4 / Service Architecture</span>
         <div className="grid">
           {SERVICES.map((service, index) => (
             <div key={index} className="col-4">
               <span className="mono">Tier 0{index + 1}</span>
               <h3 style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>{service.title}</h3>
-              <p style={{ fontSize: '0.9rem' }}>{service.for}</p>
-              <p style={{ fontSize: '0.8rem', color: '#666' }}>{service.produces}</p>
+              <p style={{ fontSize: '0.9rem' }}>{service.description.split('.')[0]}.</p>
             </div>
           ))}
         </div>
         <div className="mt-large">
           <Link href="/services" className="mono" style={{ textDecoration: 'underline' }}>
-            View service details and engagement logic
+            View Full Service Offers
           </Link>
         </div>
       </section>
 
-      {/* 5. ARCHIVE SECTION */}
-      <section className="structural-unit">
-        <span className="mono">0.4 / Public Research</span>
-        <h2>Research Archive.</h2>
-        <div className="grid">
-          {ARCHIVE.map((item, index) => (
-            <div key={index} className="col-12" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2rem' }}>
-              <div style={{ maxWidth: '70%' }}>
-                <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>{item.title}</h3>
-                <p style={{ fontSize: '0.9rem' }}>{item.summary}</p>
-              </div>
-              <span className="mono">{item.link_text}</span>
-            </div>
-          ))}
-        </div>
-        <div className="mt-large">
-          <Link href="/archive" className="mono" style={{ textDecoration: 'underline' }}>
-            Access full research archive
-          </Link>
-        </div>
-      </section>
-
-      {/* 6. ACTIVITY SECTION */}
-      <section className="structural-unit">
-        <span className="mono">0.5 / Operational Rhythm</span>
-        <h2>Continuity.</h2>
-        <div className="grid">
-          {ACTIVITY.map((log, index) => (
-            <div key={index} className="col-12" style={{ display: 'flex', gap: '4rem', marginBottom: '2rem' }}>
-              <span className="mono" style={{ minWidth: '80px' }}>{log.date}</span>
-              <div>
-                <span className="mono">{log.category}</span>
-                <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>{log.entry}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="mt-large">
-          <Link href="/activity" className="mono" style={{ textDecoration: 'underline' }}>
-            View complete activity log
-          </Link>
-        </div>
-      </section>
-
-      {/* 7. AUTHORITY SECTION */}
+      {/* 6. AUTHORITY PREVIEW */}
       <section className="structural-unit">
         <div className="grid">
           <div className="col-8">
-            <span className="mono">0.6 / Reliability</span>
-            <h2>Authority Through Method.</h2>
-            <p>{AUTHORITY.text}</p>
+            <span className="mono">0.5 / Authority</span>
+            <h2>Method Clarity.</h2>
+            <p>{AUTHORITY_TEXT}</p>
           </div>
         </div>
       </section>
 
-      {/* 8. FOUNDER SECTION */}
+      {/* 7. VERIFICATION REGISTRY */}
       <section className="structural-unit">
-        <div className="grid">
-          <div className="col-8">
-            <span className="mono">0.7 / Representation</span>
-            <h2>Research & Implementation.</h2>
-            <p>{FOUNDER.text}</p>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. EXTERNAL LINKS */}
-      <section className="structural-unit">
-        <span className="mono">0.8 / Verification Registry</span>
+        <span className="mono">0.6 / Verification Registry</span>
         <h2>Connected Research Channels.</h2>
         <div className="grid">
           {EXTERNAL_LINKS.map((link, index) => (
@@ -212,15 +142,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 10. CONTACT PREVIEW */}
+      {/* 8. CONTACT PREVIEW */}
       <section className="structural-unit">
         <div className="grid">
           <div className="col-8">
-            <span className="mono">0.9 / Inquiry</span>
+            <span className="mono">0.7 / Inquiry</span>
             <h2>Initiate Procedural Inquiry.</h2>
             <p>
               We prioritize projects presenting unique structural challenges or requiring 
-              deep analysis of environmental conditions. Direct channel: <strong>platodesign@icloud.com</strong>
+              deep analysis of environmental conditions.
             </p>
             <div className="mt-large">
               <Link href="/contact" className="submit-btn" style={{ display: 'inline-block' }}>
@@ -230,6 +160,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div style={{ position: 'fixed', bottom: '1rem', right: '1rem', fontSize: '0.5rem', color: '#ccc', zIndex: 1000, opacity: 0.2 }}>v5.0.0</div>
     </div>
   );
 }

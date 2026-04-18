@@ -54,6 +54,13 @@ export default function RootLayout({
         </header>
         <main>{children}</main>
         <footer className="site-footer">
+          <div style={{ marginBottom: '4rem', maxWidth: '600px', margin: '0 auto 4rem auto' }}>
+            <span className="mono">Practice Summary</span>
+            <p style={{ fontSize: '0.8rem', color: '#666', marginTop: '1rem' }}>
+              Plato Design: Theory-driven spatial research and design practice studying the environmental conditions 
+              of human difference generation.
+            </p>
+          </div>
           <div className="footer-links">
             {EXTERNAL_LINKS.map((link, index) => (
               <span key={index}>
@@ -62,7 +69,7 @@ export default function RootLayout({
               </span>
             ))}
           </div>
-          <p>© {new Date().getFullYear()} PLATO DESIGN RESEARCH INSTITUTE. ALL RIGHTS RESERVED.</p>
+          <p style={{ marginTop: '2rem' }}>© {new Date().getFullYear()} PLATO DESIGN RESEARCH INSTITUTE. ALL RIGHTS RESERVED.</p>
         </footer>
       </body>
     </html>
