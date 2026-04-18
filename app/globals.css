@@ -170,9 +170,50 @@ main {
 .col-4 { grid-column: span 4; }
 
 @media (max-width: 768px) {
-  .col-8, .col-6, .col-4 { grid-column: span 12; }
-  .page-title { font-size: 1.75rem; }
-  .grid { gap: 3rem; }
+  body {
+    padding: 3rem 1.5rem;
+  }
+
+  .col-12, .col-8, .col-6, .col-4, .col-3 { 
+    grid-column: span 12 !important; 
+  }
+  
+  .page-title { 
+    font-size: 1.6rem; 
+    letter-spacing: 0.1em;
+  }
+  
+  .grid { 
+    gap: 2.5rem; 
+  }
+
+  .site-header {
+    margin-bottom: 6rem;
+  }
+
+  .header-top .logo {
+    font-size: 1.25rem;
+    letter-spacing: 0.4em;
+    margin-bottom: 2rem;
+  }
+
+  .site-nav ul {
+    gap: 1.5rem;
+  }
+
+  .action-layer {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .structural-unit {
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+  }
+
+  .structural-unit h2 {
+    font-size: 1.1rem;
+  }
 }
 
 /* Structured Sections */

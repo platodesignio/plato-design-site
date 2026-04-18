@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   description: "Independent research institute focused on the environmental conditions enabling high-quality human difference generation.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
