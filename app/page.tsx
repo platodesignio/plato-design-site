@@ -21,10 +21,10 @@ export const metadata = {
 };
 
 export default function Home() {
-  // FINAL_STABLE_DEPLOY: 2026-04-16T22:40:00Z
+  // FINAL_DEPLOYMENT_V3: 2026-04-16T22:50:00Z
   return (
     <div className="home-container">
-      <div style={{ position: 'fixed', bottom: '1rem', right: '1rem', fontSize: '0.5rem', color: '#ccc', zIndex: 1000 }}>v2.0.1</div>
+      <div style={{ position: 'fixed', bottom: '1rem', right: '1rem', fontSize: '0.5rem', color: '#ccc', zIndex: 1000 }}>v3.0.0</div>
       {/* 1. HERO SECTION */}
       <section className="page-intro center">
         <span className="mono">0.0 / Practice Definition</span>
