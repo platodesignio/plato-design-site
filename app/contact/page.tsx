@@ -26,7 +26,7 @@ export default function Contact() {
           </p>
           <div className="mt-large">
             <span className="mono">Direct Channel</span>
-            <p>institute@plato.design</p>
+            <p>platodesign@icloud.com</p>
           </div>
           <div className="mt-large">
             <span className="mono">Research Access</span>

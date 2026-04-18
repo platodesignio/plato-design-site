@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import { NAVIGATION_PATHS, EXTERNAL_LINKS } from "@/lib/content";
 
 const serif = Playfair_Display({
   subsets: ["latin"],
@@ -38,23 +39,27 @@ export default function RootLayout({
           </div>
           <nav className="site-nav">
             <ul>
-              <li><Link href="/about">RESEARCH</Link></li>
-              <li><Link href="/services">SERVICES</Link></li>
-              <li><Link href="/theory">THEORY</Link></li>
-              <li><Link href="/archive">ARCHIVE</Link></li>
-              <li><Link href="/activity">ACTIVITY</Link></li>
-              <li><a href="https://www.instagram.com/plato.design.lab" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
-              <li><a href="https://www.patreon.com/cw/platodesignlab" target="_blank" rel="noopener noreferrer">PATREON</a></li>
-              <li><Link href="/contact">CONTACT</Link></li>
+              {NAVIGATION_PATHS.map((path, index) => (
+                <li key={index}>
+                  {path.external ? (
+                    <a href={path.href} target="_blank" rel="noopener noreferrer">{path.label.toUpperCase()}</a>
+                  ) : (
+                    <Link href={path.href}>{path.label.toUpperCase()}</Link>
+                  )}
+                </li>
+              ))}
             </ul>
           </nav>
         </header>
         <main>{children}</main>
         <footer className="site-footer">
           <div className="footer-links">
-            <a href="https://www.instagram.com/plato.design.lab" target="_blank" rel="noopener noreferrer">@plato.design.lab</a>
-            <span className="separator">/</span>
-            <a href="https://www.patreon.com/cw/platodesignlab" target="_blank" rel="noopener noreferrer">Plato Design Lab on Patreon</a>
+            {EXTERNAL_LINKS.map((link, index) => (
+              <span key={index}>
+                <a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>
+                {index < EXTERNAL_LINKS.length - 1 && <span className="separator">/</span>}
+              </span>
+            ))}
           </div>
           <p>© {new Date().getFullYear()} PLATO DESIGN RESEARCH INSTITUTE. ALL RIGHTS RESERVED.</p>
         </footer>

@@ -38,10 +38,17 @@ export default function Home() {
           <ul className="grid" style={{ listStyle: 'none', textAlign: 'left' }}>
             {NAVIGATION_PATHS.map((path, index) => (
               <li key={index} className="col-3">
-                <Link href={path.href} className="block-link" target={path.external ? "_blank" : undefined}>
-                  <span className="mono">{index < 4 ? `Pathway 0${index + 1}` : `Verification`}</span>
-                  <h3 style={{ fontSize: '1rem', letterSpacing: '0.1em' }}>{path.label}</h3>
-                </Link>
+                {path.external ? (
+                  <a href={path.href} target="_blank" rel="noopener noreferrer" className="block-link">
+                    <span className="mono">External / 0{index + 1}</span>
+                    <h3 style={{ fontSize: '0.9rem', letterSpacing: '0.1em' }}>{path.label}</h3>
+                  </a>
+                ) : (
+                  <Link href={path.href} className="block-link">
+                    <span className="mono">Pathway / 0{index + 1}</span>
+                    <h3 style={{ fontSize: '0.9rem', letterSpacing: '0.1em' }}>{path.label}</h3>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -212,7 +219,7 @@ export default function Home() {
             <h2>Initiate Procedural Inquiry.</h2>
             <p>
               We prioritize projects presenting unique structural challenges or requiring 
-              deep analysis of environmental conditions.
+              deep analysis of environmental conditions. Direct channel: <strong>platodesign@icloud.com</strong>
             </p>
             <div className="mt-large">
               <Link href="/contact" className="submit-btn" style={{ display: 'inline-block' }}>

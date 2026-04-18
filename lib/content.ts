@@ -15,6 +15,8 @@ export const NAVIGATION_PATHS = [
   { label: "Theory", href: "/theory" },
   { label: "Archive", href: "/archive" },
   { label: "Activity", href: "/activity" },
+  { label: "X", href: "https://x.com/platodesignlab", external: true },
+  { label: "YouTube", href: "https://youtube.com/@platodesignlab?si=CnewIXXMBk9ITPF2", external: true },
   { label: "Instagram", href: "https://www.instagram.com/plato.design.lab", external: true },
   { label: "Patreon", href: "https://www.patreon.com/cw/platodesignlab", external: true },
   { label: "Contact", href: "/contact" },
@@ -186,7 +188,17 @@ export const FOUNDER = {
 
 export const EXTERNAL_LINKS = [
   {
-    label: "@plato.design.lab",
+    label: "@platodesignlab on X",
+    href: "https://x.com/platodesignlab",
+    description: "Brief updates and theoretical fragments."
+  },
+  {
+    label: "Plato Design Lab on YouTube",
+    href: "https://youtube.com/@platodesignlab?si=CnewIXXMBk9ITPF2",
+    description: "Visual studies and environmental walkthroughs."
+  },
+  {
+    label: "@plato.design.lab on Instagram",
     href: "https://www.instagram.com/plato.design.lab",
     description: "Ongoing visual research and public fragments."
   },
