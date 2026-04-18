@@ -12,7 +12,16 @@ import {
   EXTERNAL_LINKS 
 } from "@/lib/content";
 
+export const metadata = {
+  title: "Plato Design | Structural Research & Spatial Analysis",
+  description: "Independent research institute focused on the environmental conditions enabling high-quality human difference generation.",
+  other: {
+    "cache-bust": new Date().getTime().toString(),
+  }
+};
+
 export default function Home() {
+  // Build: 20260416-Rev1
   return (
     <div className="home-container">
       {/* 1. HERO SECTION */}

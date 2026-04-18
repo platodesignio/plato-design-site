@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  trailingSlash: true, // パス解決の不整合を解消
+  trailingSlash: false, // 標準のパス解決にリセット
 };
 
 module.exports = nextConfig;
