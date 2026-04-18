@@ -21,7 +21,7 @@ export const metadata = {
 };
 
 export default function Home() {
-  // Build: 20260416-Rev1
+  // Build: 20260416-Rev2-Static
   return (
     <div className="home-container">
       {/* 1. HERO SECTION */}

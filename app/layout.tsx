@@ -15,6 +15,7 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://plato-design-site.vercel.app"),
   title: "Plato Design | Structural Research & Spatial Analysis",
   description: "Independent research institute focused on the environmental conditions enabling high-quality human difference generation.",
 };
