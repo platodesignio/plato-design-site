@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  distDir: '.next', // ビルド成果物の場所を明示
+  trailingSlash: true, // パス解決の曖昧さを完全に排除
 };
 
 module.exports = nextConfig;
