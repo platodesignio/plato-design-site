@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
-import { NAVIGATION_PATHS, EXTERNAL_LINKS } from "@/lib/content";
+import { NAVIGATION_PATHS, SOCIAL_REGISTRY } from "@/lib/content";
 
 const serif = Playfair_Display({
   subsets: ["latin"],
@@ -65,10 +65,10 @@ export default function RootLayout({
             </p>
           </div>
           <div className="footer-links">
-            {EXTERNAL_LINKS.map((link, index) => (
+            {SOCIAL_REGISTRY.map((link, index) => (
               <span key={index}>
                 <a href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>
-                {index < EXTERNAL_LINKS.length - 1 && <span className="separator">/</span>}
+                {index < SOCIAL_REGISTRY.length - 1 && <span className="separator">/</span>}
               </span>
             ))}
           </div>
