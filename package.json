@@ -1,6 +1,6 @@
 {
-  "name": "plato-design",
-  "version": "8.0.0",
+  "name": "plato-design-site",
+  "version": "9.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
