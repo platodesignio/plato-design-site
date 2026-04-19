@@ -39,33 +39,39 @@ export const DIAGNOSTIC_INDEX = [
 export const THEORY_ARCHITECTURE = [
   {
     title: "Embody Information Generating Rate Design",
-    definition: "Design framework for structuring environments that support the sustained production of new difference.",
-    utility: "Identifies whether a space supports coherent perception, action, and recovery.",
-    support: "Supports redesign of bodily reference and configured support structure."
+    definition: "A design framework for structuring environments that support the sustained production of new difference through bodily and spatial conditions.",
+    utility: "Identifies whether a space supports coherent perception, action, and the emergence of fresh cognitive and behavioral difference.",
+    support: "Supports the redesign of environmental conditions so that generation depends on configured bodily reference rather than willpower alone."
   },
   {
     title: "Symmetry Bio Network Protocol",
-    definition: "Protocol for reconstructing distributed symmetry conditions for whole-body coordination.",
-    utility: "Detects asymmetry, fragmentation, and failures of distributed bodily integration.",
-    support: "Supports reorganization of directional cues and environmental anchoring."
+    definition: "A protocol for reading and reconstructing the distributed symmetry conditions required for whole-body coordination and stable environmental coupling.",
+    utility: "Detects asymmetry, fragmentation, postural drift, and failures of distributed bodily integration across a spatial field.",
+    support: "Supports the reorganization of support surfaces, directional cues, and environmental anchoring needed for stronger whole-body coupling."
   },
   {
     title: "Information Generation Rate",
-    definition: "Design indicator for the density and continuity with which a system produces new difference.",
-    utility: "Reveals environmental suppression of generative capacity through overload or monotony.",
-    support: "Supports interventions increasing conditions for coherent novelty."
+    definition: "A design indicator for the density and continuity with which a person or system can produce high-quality difference.",
+    utility: "Reveals whether an environment is suppressing generative capacity through overload, fragmentation, monotony, or poor support.",
+    support: "Supports interventions that increase the conditions for coherent novelty and sustained intellectual output."
   },
   {
     title: "Boundary Updating",
-    definition: "The capacity to reorganize contact with the world rather than remain fixed in rigid relations.",
-    utility: "Shows where a system is trapped in stale thresholds or repeated frictions.",
-    support: "Supports reconfiguration of thresholds and interfaces so that action can reopen."
+    definition: "The environmental and bodily capacity to reorganize contact with the world rather than remain fixed in rigid or degraded relations.",
+    utility: "Shows where a person or system is trapped in stale thresholds, repeated frictions, or exhausted interaction patterns.",
+    support: "Supports redesigns that reconfigure thresholds, pathways, and interfaces so that action can reopen."
+  },
+  {
+    title: "Reachable Difference",
+    definition: "The field of actionable variation that a body or system can actually enter from its present environmental condition.",
+    utility: "Clarifies whether a space expands or narrows what kinds of difference are realistically attainable for the user.",
+    support: "Supports designs that increase operational possibility and actionable variation rather than symbolic aspiration alone."
   },
   {
     title: "Broadcast Reach",
-    definition: "The degree to which generated difference can extend into a wider social or institutional field.",
-    utility: "Determines whether a space supports private recovery or also supports articulation and transmission.",
-    support: "Supports strategies aligning generation with expression and external consequence."
+    definition: "The degree to which generated difference can extend beyond the local body or room into a wider social or institutional field.",
+    utility: "Shows whether a space supports only private recovery or also supports articulation, communication, and external consequence.",
+    support: "Supports environmental strategies that align generation with expression, visibility, and semantic transmission."
   }
 ];
 
@@ -73,23 +79,23 @@ export const SERVICE_ARCHITECTURE = [
   {
     title: "Information Space Reading",
     tier: "Tier 1: Entry Diagnostic",
-    description: "Intended for homes, workspaces, studios, and research rooms requiring a structured reading of how environmental conditions support or degrade coherence.",
-    includes: "Engagement through the Ten Diagnostic Axes. Identifies support logic, friction points, and directional breakdowns.",
-    output: "Diagnostic Report including annotated observations, redesign priorities, and directional recommendations."
+    description: "A structured reading of homes, workspaces, studios, and research rooms using the ten diagnostic axes and theory-based environmental assessment logic.",
+    includes: "Identifies the current support logic of the space, friction points, directional breakdowns, and conditions narrowing future difference.",
+    output: "A comprehensive Diagnostic Report identifying systemic failures and potential intervention vectors."
   },
   {
     title: "Information Space Recomposition",
     tier: "Tier 2: Core Redesign",
-    description: "Intended for spaces requiring active structural change rather than interpretation alone.",
-    includes: "Reorganization of circulation, support surfaces, light, interfaces, and input density.",
-    output: "Recomposition Logic, layout direction, spatial intervention principles, and integrated habitat redesign."
+    description: "A restructuring process that reorganizes circulation, support surfaces, light, acoustic pressure, and input density to change generative conditions.",
+    includes: "Addresses spaces where current configuration creates perceptual noise, bodily instability, fragmented attention, or weakened identity.",
+    output: "Recomposition Logic, layout direction, spatial intervention principles, and technical implementation stewardship."
   },
   {
     title: "Information Habitat Direction",
     tier: "Tier 3: Strategic Stewardship",
-    description: "Strategic engagement linking space redesign with brand direction, activity structure, and value positioning.",
-    includes: "Integration of environmental reading, spatial direction, and conceptual positioning into a single process.",
-    output: "Long-range operating logic and multi-phase environmental evolution stewardship."
+    description: "A higher-order engagement linking environmental redesign with brand direction, activity structure, and long-range value positioning.",
+    includes: "Useful when the environment cannot be separated from the direction of work. Integrates spatial direction with conceptual positioning.",
+    output: "Ongoing stewardship of the relationship between the organization's mission and its supporting habitat."
   }
 ];
 
@@ -98,48 +104,49 @@ export const GRAVITY_STUDIES = [
     id: "GS-01",
     title: "Architecture of Re-Synchronization Under Gravity Transition",
     jp_title: "重力遷移下の再同期建築学",
-    definition: "Spatial theory for built environments supporting bodily re-synchronization when gravitational reference shifts.",
-    body: "Examines architecture as a re-synchronization system across launch, microgravity, and return. Focuses on directional cues and bodily anchoring required for stable perception and recovery."
+    definition: "A spatial theory of how built environments can support bodily re-synchronization when gravitational reference conditions change.",
+    body: "This study examines how architecture can operate as a re-synchronization system when gravitational reference shifts across launch, microgravity, partial gravity, and return. The focus is on directional cues, support surfaces, light organization, and movement pathways required for stable perception and recovery. The problem is how habitat structure can help the body rebuild operative reference when the environment no longer supplies it in ordinary form."
   },
   {
     id: "GS-02",
-    title: "Symmetry Construction and Whole-Body Coupling",
+    title: "Symmetry Construction and Whole-Body Tensegrity Coupling",
     jp_title: "変動重力環境における対称性構築",
-    definition: "Framework for maintaining bodily symmetry and structural coupling under altered gravitational anchoring.",
-    body: "Approaches the body as a tensegrity system. Redesigns interfaces and support logic to help preserve whole-body coupling rather than leaving the body to compensate in isolation."
+    definition: "A framework for maintaining bodily symmetry and whole-body structural coupling when ordinary gravitational anchoring weakens.",
+    body: "This study investigates how altered gravity affects axial stability and proprioceptive coherence. It approaches the body as a tensegrity system whose integrity depends on both internal organization and environmental assistance. The design problem is how architecture interfaces and support logic can help preserve whole-body coupling rather than leaving the body to compensate in isolation."
   },
   {
     id: "GS-03",
-    title: "Sensorimotor Habitat Recomposition",
+    title: "Sensorimotor Habitat Recomposition for Microgravity and Re-entry",
     jp_title: "感覚運動ハビタット再構成論",
-    definition: "Redesign framework for sensorimotor adaptation and re-stabilization across gravitational phases.",
-    body: "Develops habitat logic for movement and orientation. Structure reduces disorientation and supports recalibration during transition from low-gravity to gravity-loaded conditions."
+    definition: "A habitat redesign framework for sensorimotor adaptation in microgravity and for re-stabilization during re-entry.",
+    body: "This study develops a habitat logic for movement, perception, and orientation across gravitational phases. It examines how environmental structure can reduce disorientation, support recalibration, and improve the recovery of actionable bodily reference during transition. The emphasis is on habitat composition as a unified synchronization tool."
   }
 ];
 
 export const ARCHIVE_REGISTRY = [
-  { title: "The Ten-Rate Generative Framework", type: "Research Study", summary: "Relationship between spatial density and informational output rates." },
-  { title: "Acoustic Intrusion and Linguistic Decay", type: "Essay", summary: "Impact of background noise on deep focus and sentence generation quality." },
-  { title: "Symmetry Bio Network Protocol v1.0", type: "Release Document", summary: "Initial protocol release for terrestrial habitat diagnostic." },
-  { title: "Architecture of Re-Synchronization", type: "Theory Board", summary: "Visual studies of environmental coupling under gravity transition." }
+  { title: "The Ten-Rate Generative Framework", type: "Research Release", summary: "A comprehensive metric system for evaluating the density and quality of difference produced in a space." },
+  { title: "Acoustic Intrusion and Linguistic Decay", type: "Theoretical Essay", summary: "Impact of background auditory noise on linguistic processing and deep intellectual labor." },
+  { title: "Symmetry Bio Network Protocol v1.0", type: "Operational Document", summary: "Initial protocol release for terrestrial habitat diagnostic and symmetry construction." },
+  { title: "Architecture of Re-Synchronization", type: "Theory Plate", summary: "Visual studies of environmental coupling and directional cues under gravity transition." },
+  { title: "Boundary Updating in Semi-AI Habitats", type: "Internal Release", summary: "Analysis of dynamic threshold controls for high-density information environments." }
 ];
 
 export const ACTIVITY_LOG = [
-  { date: "2026.04", category: "Research Development", entry: "Refining the 'Boundary Updating' logic for Semi-AI research habitats." },
-  { date: "2026.03", category: "Spatial Diagnostics", entry: "Completed reading of high-precision robotics workspace. Resolved 3 circulation conflicts." },
-  { date: "2026.02", category: "Visual Production", entry: "Finalized theory boards for GTS Study 02: Symmetry Construction." },
-  { date: "2026.01", category: "Institutional Release", entry: "Archive release pending editorial completion for Information Habitat Direction." }
+  { date: "2026.04", category: "Research Development", entry: "Finalizing visual theory boards for GTS Study 03: Sensorimotor Habitat Recomposition." },
+  { date: "2026.03", category: "Spatial Diagnostics", entry: "Completed reading of a multinational research facility. Identified 6 circulation conflicts and 2 acoustic bottlenecks." },
+  { date: "2026.02", category: "Visual Production", entry: "Production of classified institutional research plates for the 'Reachable Difference' framework." },
+  { date: "2026.01", category: "Framework Refinement", entry: "Internal update to the Symmetry Bio Network Protocol to include machine-generated flow parameters." }
 ];
 
 export const RELIABILITY_CONTENT = {
-  text: "Plato Design builds trust through explicit method rather than decorative persuasion. The work is grounded in named frameworks, diagnostic axes, reproducible reading logic, and public research articulation. Authority here comes from continuity, precision, and transparency."
+  text: "Plato Design operates through explicit diagnostic axes, theory-driven spatial reading, reproducible interpretive logic, public research release, and transparent inquiry structure rather than decorative trend response. Our work is grounded in named frameworks and methodological consistency to ensure institutional depth and operational clarity."
 };
 
 export const SOCIAL_REGISTRY = [
-  { label: "X / @platodesignlab", href: "https://x.com/platodesignlab", desc: "Operational updates.", external: true },
-  { label: "YouTube / Plato Design Lab", href: "https://youtube.com/@platodesignlab", desc: "Visual studies.", external: true },
-  { label: "Instagram / @plato.design.lab", href: "https://www.instagram.com/plato.design.lab", desc: "Field observations.", external: true },
-  { label: "Patreon / Plato Design Lab", href: "https://www.patreon.com/cw/platodesignlab", desc: "Deep research releases.", external: true }
+  { label: "X / @platodesignlab", href: "https://x.com/platodesignlab", desc: "Theoretical fragments and operational updates.", external: true },
+  { label: "YouTube / Plato Design Lab", href: "https://youtube.com/@platodesignlab?si=CnewIXXMBk9ITPF2", desc: "Visual studies and environmental walkthroughs.", external: true },
+  { label: "Instagram / @plato.design.lab", href: "https://www.instagram.com/plato.design.lab", desc: "Field observations and visual theory fragments.", external: true },
+  { label: "Patreon / Plato Design Lab", href: "https://www.patreon.com/cw/platodesignlab", desc: "Research releases and deep archive access.", external: true }
 ];
 
 export const CONTACT_EMAIL = "platodesign@icloud.com";
